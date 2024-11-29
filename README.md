@@ -71,7 +71,7 @@ The model was evaluated using the validation set (400 images). Metrics such as a
 The trained model was saved using the following command for future use:
 
 model.save("Smile_Detector_Model_InceptionResNetV2.keras")
-
+python
 
 ## Real-Time Smile Detection
 
@@ -89,3 +89,4 @@ Each frame is processed using the `haarcascade_frontalface_default.xml` model to
 The preprocessed image is passed through the trained model for prediction using:
 ```python
 model.predict(frame)
+python
