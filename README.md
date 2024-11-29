@@ -69,7 +69,7 @@ The model was evaluated using the validation set (400 images). Metrics such as a
 ## Saving the Model
 
 The trained model was saved using the following command for future use:
-```python
+
 model.save("Smile_Detector_Model_InceptionResNetV2.keras")
 
 
