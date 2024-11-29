@@ -90,3 +90,5 @@ The preprocessed image is passed through the trained model for prediction using:
 ```python
 model.predict(frame)
 ```
+## Final Note
+### I hope you enjoy reading this repository and implementing the project. 😊
