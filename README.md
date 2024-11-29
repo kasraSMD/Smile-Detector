@@ -71,3 +71,20 @@ The model was evaluated using the validation set (400 images). Metrics such as a
 The trained model was saved using the following command for future use:
 ```python
 model.save("Smile_Detector_Model_InceptionResNetV2.keras")
+
+## Real-Time Smile Detection
+
+### Video Input
+The OpenCV library and the `VideoCapture` function are used to capture video frames from a webcam.
+
+### Face Detection
+Each frame is processed using the `haarcascade_frontalface_default.xml` model to detect and crop facial regions.
+
+### Preprocessing
+1. The cropped face is resized to a **256×256** matrix.
+2. It is normalized using the `preprocess_input` function from `keras.applications.inception_resnet_v2`.
+
+### Prediction
+The preprocessed image is passed through the trained model for prediction using:
+```python
+model.predict(frame)
